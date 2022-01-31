@@ -1,5 +1,7 @@
 /* eslint-disable no-useless-constructor */
 import React from "react";
+import './CustomInput.css';
+
 
 export class CustomInput extends React.Component {
 
@@ -10,8 +12,10 @@ export class CustomInput extends React.Component {
 
     render() {
         return <>
-            <input type={this.props.type} ></input>
+
+            <input type={this.props.type} placeholder={this.props.placeholder} className={this.props.className}></input>
         </>
+
     }
 
 }

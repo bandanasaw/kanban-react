@@ -1,20 +1,24 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React from 'react';
-import { CustomInput } from './lib/Input/CustomInput';
 
- export default class App extends React.Component {
-   render(){
-    return (
-      <div className="App">
-        <header className="App-header">
-          <CustomInput type='text'></CustomInput>
-          
+import { Header } from './lib/Header/Header';
+import { AddingCard } from './component/AddingCard/AddingCard';
+
+export default class App extends React.Component {
+    render() {
+        return ( 
+        < div className = "App" >
+            < div className = "App-header" >
+            < Header brandName='Boards'> </Header>
          
-        </header>
-      </div>
-    );
-  }
+            </div>
+            <AddingCard></AddingCard>
 
-   }
- 
+
+
+             </div >
+        );
+    }
+
+}
